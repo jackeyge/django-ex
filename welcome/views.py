@@ -29,4 +29,4 @@ def redisTest(request):
     return HttpResponse(cache.get('v'))  # 获取key为v的缓存
 def metrics(request):
     v = PageView.objects.count()
-    return HttpResponse("page_views: %s" %v)
+    return HttpResponse("page_views %s" %v)
