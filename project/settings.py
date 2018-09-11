@@ -82,7 +82,7 @@ caches={
 
 'backend': 'redis_caches.cache.RedisCache',
 
-'location': 172.30.134.27:6379
+'location': 172.30.134.27:6379,
 
 'option': {
 
