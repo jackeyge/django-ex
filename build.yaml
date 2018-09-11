@@ -1,0 +1,48 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  annotations:
+    description: Defines how to build the application
+    template.alpha.openshift.io/wait-for-ready: 'true'
+  labels:
+    app: django-psql-example
+    template: django-psql-example
+  name: django-psql-example
+  namespace: gxytest-jenkins
+  resourceVersion: '55011017'
+  selfLink: >-
+    /apis/build.openshift.io/v1/namespaces/gxytest-jenkins/buildconfigs/django-psql-example
+  uid: 45b90998-b567-11e8-8e61-005056aae8a2
+spec:
+  nodeSelector: null
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'django-psql-example:latest'
+  postCommit:
+    script: ./manage.py test
+  resources: {}
+  runPolicy: Serial
+  source:
+    git:
+      uri: 'https://github.com/jackeyge/django-ex.git'
+    type: Git
+  strategy:
+    sourceStrategy:
+      env:
+        - name: PIP_INDEX_URL
+      from:
+        kind: ImageStreamTag
+        name: 'python:3.5'
+        namespace: openshift
+    type: Source
+  triggers:
+    - imageChange:
+        lastTriggeredImageID: >-
+          harbor.ops.guizhou/rhscl/python-35-rhel7@sha256:867638bfebc1b49f880f48e9ebdf3389394cb278e7eb28b5af1d01445603691d
+      type: ImageChange
+    - type: ConfigChange
+    - github:
+        secret: OO5mVDypYgfKSwEkV34SVkOJ2MfuoHlo2xgwBsVF
+      type: GitHub
+

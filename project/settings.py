@@ -76,6 +76,24 @@ TEMPLATES = [
     },
 ]
 
+caches={
+
+'default': {
+
+'backend': 'redis_caches.cache.RedisCache',
+
+'location': 172.30.134.27:6379
+
+'option': {
+
+'client_class':'redis_cache.client.DefaultClient',
+
+},
+
+},
+
+}
+
 WSGI_APPLICATION = 'wsgi.application'
 
 
