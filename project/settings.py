@@ -76,23 +76,17 @@ TEMPLATES = [
     },
 ]
 
-caches={
-
-'default': {
-
-'backend': 'redis_caches.cache.RedisCache',
-
-'location': 172.30.134.27:6379,
-
-'option': {
-
-'client_class':'redis_cache.client.DefaultClient',
-
-},
-
-},
-
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://172.30.134.27:6379',
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+             "PASSWORD": "123456",
+        },
+    },
 }
+
 
 WSGI_APPLICATION = 'wsgi.application'
 
