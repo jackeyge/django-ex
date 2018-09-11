@@ -16,7 +16,8 @@ def index(request):
     return render(request, 'welcome/index.html', {
         'hostname': hostname,
         'database': database.info(),
-        'count': PageView.objects.count()
+        'count': PageView.objects.count(),
+        'message': 'This is a test'
     })
 
 def health(request):
