@@ -4,11 +4,11 @@ metadata:
   annotations:
     pipeline.alpha.openshift.io/uses: '[{"name": "jenkins", "namespace": "", "kind": "DeploymentConfig"}]'
   labels:
-    app: django-psql-example
+    app: django-psql-example-pipeline
     group: django-psql-example
-    name: django-psql-example
+    name: django-psql-example-pipeline
     template: django-psql-example
-  name: django-psql-example
+  name: django-psql-example-pipeline
   namespace: gxytest-jenkins
 spec:
   nodeSelector: {}

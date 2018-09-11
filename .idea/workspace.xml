@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e742182-67bb-4cbc-8f51-33c8019ebfb2" name="Default" comment="" />
+    <list default="true" id="9e742182-67bb-4cbc-8f51-33c8019ebfb2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-bc.yaml" afterPath="$PROJECT_DIR$/template-bc.yaml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/openshift/scripts/run-in-container.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="116">
-              <caret line="18" column="55" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="55" />
+              <caret line="18" column="55" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -36,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/welcome/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -44,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1197">
@@ -54,10 +57,39 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="database.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/database.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/requirements.txt" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
@@ -313,7 +345,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="20" width="1346" height="692" extended-state="1" />
+    <frame x="10" y="20" width="1346" height="692" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962853" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -355,7 +387,7 @@
     <entry file="file://$PROJECT_DIR$/openshift/scripts/run-in-container.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
-          <caret line="18" column="55" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="55" />
+          <caret line="18" column="55" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -363,7 +395,7 @@
     <entry file="file://$PROJECT_DIR$/welcome/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -374,6 +406,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1197">
           <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
           <folding />
         </state>
       </provider>
