@@ -2,7 +2,7 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from welcome.views import index, health, redisTest
+from welcome.views import index, health, redisTest, metrics
 
 urlpatterns = [
     # Examples:
@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^$', index),
     url(r'^health$', health),
     url(r'^redis$', redisTest),
+    url(r'^metrics$', metrics),
     url(r'^admin/', include(admin.site.urls)),
 ]
 
