@@ -26,7 +26,7 @@ def health(request):
 def redisTest(request):
     cache.set('w', 'two2', 60 * 60)  # 写入key为v，值为555的缓存，有效期30分钟
     cache.has_key('w')  # 判断key为v是否存在
-    return HttpResponse(cache.get('v'))  # 获取key为v的缓存
+    return HttpResponse(cache.get('w'))  # 获取key为v的缓存
 def metrics(request):
     v = PageView.objects.count()
     return HttpResponse("page_views %s" %v)
