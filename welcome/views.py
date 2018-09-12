@@ -7,6 +7,8 @@ from django.core.cache import cache  # 引入缓存模块
 from . import database
 from .models import PageView
 
+import urllib.request
+
 # Create your views here.
 
 def index(request):
@@ -24,9 +26,14 @@ def health(request):
     return HttpResponse("ok")
 
 def redisTest(request):
-    cache.set('w', 'two2', 60 * 60)  # 写入key为v，值为555的缓存，有效期30分钟
-    cache.has_key('w')  # 判断key为v是否存在
-    return HttpResponse(cache.get('w'))  # 获取key为v的缓存
+    #cache.set('w', 'two2', 60 * 60)  # 写入key为v，值为555的缓存，有效期30分钟
+    #cache.has_key('w')  # 判断key为v是否存在
+    #return HttpResponse(cache.get('w'))  # 获取key为v的缓存
+    url = "http://django-psql-example-gxytest-jenkins.swgz.tae.ctyun.cn/redis"
+    contents = urllib.request.urlopen(url).read()
+    return HttpResponse("get redis value:" contents)
+
+
 def metrics(request):
     v = PageView.objects.count()
     return HttpResponse("page_views %s" %v)
