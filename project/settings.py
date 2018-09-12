@@ -79,10 +79,12 @@ TEMPLATES = [
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://172.30.134.27:6379',
+        #'LOCATION': 'redis://172.30.134.27:6379',
+        'LOCATION': os.getenv('REDIS_SERVER'),
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
-             "PASSWORD": "123456",
+             #"PASSWORD": "123456",
+             "PASSWORD": os.getenv('REDIS_PASSWORD'),
         },
     },
 }
