@@ -31,7 +31,7 @@ def redisTest(request):
     #return HttpResponse(cache.get('w'))  # 获取key为v的缓存
     url = "http://django-psql-example-gxytest-jenkins.swgz.tae.ctyun.cn/redis"
     contents = urllib.request.urlopen(url).read()
-    return HttpResponse("get redis value:" contents)
+    return HttpResponse("get redis value: %s" %contents)
 
 
 def metrics(request):
