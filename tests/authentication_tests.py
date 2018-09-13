@@ -28,3 +28,4 @@ class StandAloneTests(TestCase):
 		"""方法异常的测试"""
 		mock_open.side_effect = IOError()
 		self.assertFalse(auth.login('netease', 'password'))
+		
