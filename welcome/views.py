@@ -17,7 +17,7 @@ def index(request):
         'hostname': hostname,
         'database': database.info(),
         'count': PageView.objects.count(),
-        'message': 'This is a test1'
+        'message': 'This is master'
     })
 
 def health(request):
